@@ -15,15 +15,15 @@ Install Certbot and it’s Nginx plugin
 
 Verify Web Server Ports are Open and Allowed through Firewall
 
-   sudo ufw status verbose
+     sudo ufw status verbose
 
 Obtain an SSL certificate
 
-   sudo certbot --nginx -d your_domain.com -d www.your_domain.com
+    sudo certbot --nginx -d your_domain.com -d www.your_domain.com
 
 Check Status of Certbot
 
-   sudo systemctl status certbot.timer
+    sudo systemctl status certbot.timer
 
 Dry Run SSL Renewal
 
